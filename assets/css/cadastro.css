@@ -1,0 +1,129 @@
+.btn-default {
+    background-color: #4f46e5;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    justify-content: center;
+    gap: 8px;
+    height: fit-content;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-default:hover{
+    background-color: #9490e4;
+}
+
+
+#form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+
+}
+
+#form_container_f {
+    position: relative;
+    background-color: #f6f8ff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding-bottom: 80px;
+}
+
+#form_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_title {
+    font-weight: 500;
+    color: #272727;
+    position: relative;
+}
+
+#form_title::after {
+    background-color: #4f46e5;
+    height: 3px;
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+    left: 0;
+    bottom: 0;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    height: 100%;
+}
+
+#input_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.form-label {
+    font-size: 12px;
+    color: #404044;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field i {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    color: #404044;
+}
+
+.form-control {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    outline: none;
+
+}
+
+.input-box .input-field:focus-within{
+    outline: 2px solid #6366f1;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    color: #000;
+}
+

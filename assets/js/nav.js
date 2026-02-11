@@ -1,3 +1,4 @@
+
 //logica de animação para abertura da sidebar
 document.getElementById('open_btn').addEventListener('click',function(){
     document.getElementById('sidebar').classList.toggle('open-sidebar')
@@ -12,10 +13,9 @@ async function loadPage(page) {
     const response = await fetch(`/pages/${page}.html`);
     const html = await response.text();
     content.innerHTML = html;
-
-//logica para troca dinamica de css
-    const pageStyle = document.getElementById('page-style');
-    pageStyle.href = `assets/css/${page}.css`;
+    if(page ==='cadastro'){
+        jsCadastro();
+    }
 
 }
 

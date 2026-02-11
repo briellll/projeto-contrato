@@ -1,8 +1,10 @@
+//logica de animação para abertura da sidebar
 document.getElementById('open_btn').addEventListener('click',function(){
     document.getElementById('sidebar').classList.toggle('open-sidebar')
 })
 
 
+//logica de navegação entre as paginas
 const content = document.getElementById('content');
 const links = document.querySelectorAll('#side_items a');
 
@@ -11,6 +13,7 @@ async function loadPage(page) {
     const html = await response.text();
     content.innerHTML = html;
 
+//logica para troca dinamica de css
     const pageStyle = document.getElementById('page-style');
     pageStyle.href = `assets/css/${page}.css`;
 

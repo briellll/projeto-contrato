@@ -154,3 +154,26 @@ main {
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+
+    #sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        min-width: 200px;
+        transform: translateX(-100%);
+        z-index: 1000;
+        border-radius: 0 18px 18px 0;
+    }
+
+    #sidebar.open-sidebar {
+        transform: translateX(0);
+    }
+
+    #content {
+        width: 100%;
+        padding: 20px;
+    }
+}

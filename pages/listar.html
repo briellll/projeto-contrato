@@ -1,7 +1,10 @@
 <div id="list-container">
     <section class="filter">
         <p>Buscar Contrato</p>
-        <input type="text" placeholder="Pesquise aqui">
+        <div class="search-group">
+        <input type="text" placeholder="Pesquise aqui" class="form-control-list" >
+        <button class="btn-default-list"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
         <select name="status" id="status">
             <option value="ativo">ativo</option>
             <option value="encerrado">encerrado</option>
@@ -23,7 +26,23 @@
                     <td>001</td>
                     <td>rangel baiano</td>
                     <td>cunamata ltda</td>
-                    <td>ativo</td>
+                    <td><span class="status active">ativo</span>
+                        <button class="btn-trigger-list">
+                <i id="open_btn_icon_list" class="fa-solid fa-chevron-right"></i>
+            </button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>rangel baiano</td>
+                    <td>cunamata ltda</td>
+                    <td><span class="status closed">encerrado</span>
+                        <button class="btn-trigger-list">
+                <i id="open_btn_icon_list" class="fa-solid fa-chevron-right"></i>
+            </button>
+                    </td>
+
                 </tr>
             </tbody>
         </table>

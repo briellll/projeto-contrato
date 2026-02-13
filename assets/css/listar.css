@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .filter {
@@ -11,3 +11,120 @@
     width: 100%;
 }
 
+.search-group {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    width: 50%;
+}
+
+.form-control-list{
+    border-radius: 8px 0 0 8px;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    background-color: #ffff;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control-list:focus{
+    outline: none;
+
+}
+
+.btn-default-list {
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn-default-list:hover {
+    background-color: #9490e4;
+}
+
+.tabela-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+thead {
+    background-color: #d8dafc;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+th {
+    padding: 10px;
+    color: #404044;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+tbody tr {
+    position: relative;
+}
+
+tbody tr:hover {
+    background-color: #f1f5f9;
+    transition: 0.2s;
+}
+
+.btn-trigger-list {
+    position: absolute;
+    right: -15px;
+    top:50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #d8dafc;
+    color: #4f46e5;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.btn-trigger-list:hover {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.status {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status.active {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.status.closed {
+    background-color: #fee2e2;
+    color: #991b1b;
+}

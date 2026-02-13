@@ -1,9 +1,7 @@
-
 //logica de animação para abertura da sidebar
 document.getElementById('open_btn').addEventListener('click',function(){
     document.getElementById('sidebar').classList.toggle('open-sidebar')
 })
-
 
 //logica de navegação entre as paginas
 const content = document.getElementById('content');

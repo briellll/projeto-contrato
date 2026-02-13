@@ -130,3 +130,24 @@ tbody tr:hover {
     background-color: #fee2e2;
     color: #991b1b;
 }
+
+.detail-container {
+    display: none;
+}
+
+.detail-container.show {
+    
+}
+
+.detail-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

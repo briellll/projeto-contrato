@@ -31,4 +31,4 @@ links.forEach(link =>{
         });
 });
 
-loadPage('cadastro');
+loadPage('listar');

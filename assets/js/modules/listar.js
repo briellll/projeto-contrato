@@ -1,4 +1,5 @@
 export function jsListar(){
+    
     const buttonList = document.querySelectorAll('.btn-trigger-list')
 
     buttonList.forEach(button =>{

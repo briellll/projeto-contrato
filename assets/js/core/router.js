@@ -3,7 +3,7 @@ import { jsCadastro } from "../modules/cadastro_contrato.js";
 import { jsListar } from "../modules/listar.js";
 
 const routes = {
-    'cadastro': jsCadastro,
+    'cadastro_contrato': jsCadastro,
     'listar': jsListar
 };
 

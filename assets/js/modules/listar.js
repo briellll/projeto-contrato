@@ -2,6 +2,8 @@ export async function jsListar() {
     const API_URL = 'https://pacta-api-production.up.railway.app/contratos';
     const tbody = document.querySelector('table tbody');
 
+    const buttonList = document.querySelectorAll('.btn-trigger-list')
+
     try {
         const response = await fetch(API_URL);
 

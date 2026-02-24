@@ -22,7 +22,7 @@ export async function jsListar() {
 function renderizarLinha(contrato, container){
     const linhaPrincipal=`
     <tr>
-        <td>001</td>
+        <td>${contrato.contrato_id}</td>
         <td>${contrato.nome}</td>
         <td>${contrato.razao_social}</td>
         <td>

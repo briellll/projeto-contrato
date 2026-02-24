@@ -34,9 +34,18 @@ function initNavigation() {
     });
 }
 
+function logoutNavigation(){
+    const logout = document.getElementById('logout_btn');
+
+    logout.addEventListener('click', e =>{
+        window.location.href = 'pages/login.html';
+    })
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    initSidebar();      // ✅ Inicializa sidebar
-    initNavigation();   // ✅ Inicializa navegação
-    loadPage('listar'); // ✅ Carrega página inicial
+    initSidebar();      //  Inicializa sidebar
+    initNavigation();   //  Inicializa navegação
+    logoutNavigation(); // encerra navegação
+    loadPage('listar'); //  Carrega página inicial
 });

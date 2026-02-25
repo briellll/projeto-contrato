@@ -22,8 +22,8 @@ export function jsCadastro() {
             const formData = new FormData(form);
             const dados = Object.fromEntries(formData.entries());
 
-            if (dados.cnpj) {
-        dados.cnpj = dados.cnpj.replace(/\D/g, '');
+            if (dados.cnpjFornecedor) {
+        dados.cnpjFornecedor = dados.cnpjFornecedor.replace(/\D/g, '');
     }
 
             try {

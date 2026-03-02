@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Usuario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/cadastro_login.css">
 </head>
 <body>
-    <main class="user-cad">
-        <section class="card-cad">
-            <header class="header-cad">
+    <main class="register-container">
+        <section class="register-cad">
+            <header class="register-header">
                 <h1>Cadastro</h1>
                 <p>Faça cadastro para continuar</p>
             </header>
 
-            <form action="#" method="post" class="form-cad">
+            <form action="" method="post" class="register-form">
 
-            <div class="group-cad">
-                <label for="user" class="label-card">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="nome completo">
-            </div>
+                <div class="form-group">
+                    <label for="user" class="label-form">Nome:</label>
+                    <div class="input-wrapper">
+                        <input type="text" name="nome" id="nome" placeholder="nome completo" class="input-form">
+                        <i class="fa-solid fa-id-badge"></i>
+                    </div>
+                </div>
 
-            <div class="group-card">
-                <label for="email" class="label-card">Email:</label>
-                <input type="email" name="email" id="email" placeholder="email@email.com">
-            </div>
+                <div class="form-group">
+                    <label for="email" class="label-form">Email:</label>
+                    <div class="input-wrapper">
+                        <input type="email" name="email" id="email" placeholder="email@email.com" class="input-form">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
 
-            <div class="group-card">
-                <label for="senha" class="label-card">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="********">
-            </div>
+                <div class="form-group">
+                    <label for="senha" class="label-form">Senha:</label>
+                    <div class="input-wrapper">
+                        <input type="password" name="senha" id="senha" placeholder="********" class="input-form">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-register">Cadastrar</button>
 
             </form>
 

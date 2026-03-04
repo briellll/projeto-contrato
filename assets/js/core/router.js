@@ -1,9 +1,9 @@
-import { jsCadastro } from "../modules/cadastro_contrato.js";
+import { cadastroContrato } from "../modules/cadastro_contrato.js";
 
 import { jsListar } from "../modules/listar.js";
 
 const routes = {
-    'cadastro_contrato': jsCadastro,
+    'cadastro_contrato': cadastroContrato,
     'listar': jsListar
 };
 

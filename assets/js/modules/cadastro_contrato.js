@@ -1,4 +1,4 @@
-export function jsCadastro() {
+export function cadastroContrato() {
     const form = document.querySelector('#form');
     const API_URL = 'https://pacta-api-production.up.railway.app/contratos/create';
 
@@ -23,8 +23,8 @@ export function jsCadastro() {
             const dados = Object.fromEntries(formData.entries());
 
             if (dados.cnpjFornecedor) {
-        dados.cnpjFornecedor = dados.cnpjFornecedor.replace(/\D/g, '');
-    }
+            dados.cnpjFornecedor = dados.cnpjFornecedor.replace(/\D/g, '');
+            }
 
             try {
                 const response = await fetch(API_URL, {
@@ -33,16 +33,16 @@ export function jsCadastro() {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(dados)
-                });
+                    });
 
-                if (response.ok) {
-                    const resultado = await response.json();
-                    alert('Contrato cadastrado com sucesso');
-                    form.reset();
-                } else {
-                    throw new Error('Erro ao cadastrar contrato.');
-                }
-            } catch (error) {
+                    if (response.ok) {
+                        const resultado = await response.json();
+                        alert('Contrato cadastrado com sucesso');
+                        form.reset();
+                    } else {
+                                throw new Error('Erro ao cadastrar contrato.');
+                            }
+                } catch (error) {
                 console.error('Erro na requisição:', error);
                 alert('Deu ruim');
             }

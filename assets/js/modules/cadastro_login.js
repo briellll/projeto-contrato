@@ -1,6 +1,6 @@
 function cadastradoLogin(){
     const form = document.getElementById('form');
-    const API_URL = 'http://pacta-api-production.up.railway.app/auth/registro'
+    const API_URL = 'https://pacta-api-production.up.railway.app/auth/registro'
 
     form.addEventListener('submit', async function (e) {
         e.preventDefault();

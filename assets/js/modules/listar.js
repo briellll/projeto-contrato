@@ -32,6 +32,14 @@ export async function jsListar() {
 }
 
 function renderizarLinha(contrato, container){
+
+    const formattedValue = new Intl.NumberFormat('pt-BR',{
+        style: 'currency',
+        currency: 'BRL',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    }).format(contrato.valor_contrato);
+
     const linhaPrincipal=`
     <tr>
         <td>${contrato.contrato_id}</td>
@@ -83,7 +91,7 @@ function renderizarLinha(contrato, container){
 
                             <div class="detail-item">
                                 <span>Valor:</span>
-                                <strong>${contrato.valor_contrato}</strong>
+                                <strong>${formattedValue}</strong>
                             </div>
 
                          </div>
@@ -96,11 +104,15 @@ function renderizarLinha(contrato, container){
 
 function configurarEventos(){
     const buttonList = document.querySelectorAll('.btn-trigger-list')
+
     buttonList.forEach(button =>{
         button.addEventListener('click', function(){
             const currentRow = this.closest('tr');
             const detailRow = currentRow.nextElementSibling;
+
+            currentRow.classList.toggle('highlight');
             this.classList.toggle('rotated');
+
             if (detailRow && detailRow.classList.contains('detail-container')){
                 detailRow.classList.toggle('show');
             }

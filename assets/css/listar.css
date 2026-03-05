@@ -62,13 +62,13 @@ table {
 }
 
 thead {
-    background-color: #d8dafc;
+    background-color: #4f46e5;
     border-bottom: 2px solid #e2e8f0;
 }
 
 th {
     padding: 10px;
-    color: #404044;
+    color: #ffffff;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -79,16 +79,30 @@ td {
     border-bottom: 1px solid #f1f5f9;
     color: #334155;
     font-size: 0.9rem;
+    border: none;
 }
 
 tbody tr {
     position: relative;
+
 }
 
 tbody tr:hover {
     background-color: #f1f5f9;
     transition: 0.2s;
 }
+
+tbody tr.highlight {
+    background-color: #d8dafc;
+    border-left: 4px solid #4f46e5;
+}
+
+tr.detail-container.show {
+    background-color: #d8dafc;
+    border-left: 4px solid #4f46e5;
+
+}
+
 
 .btn-trigger-list {
     position: absolute;

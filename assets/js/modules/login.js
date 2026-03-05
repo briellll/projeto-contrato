@@ -31,7 +31,7 @@ function login(){
             if (response.ok){
                 const result = await response.json();
 
-                localStorage.setItem('userToken',result.authorization)
+                localStorage.setItem('userToken',result.token)
 
                 window.location.href = '../index.html';
             } else {

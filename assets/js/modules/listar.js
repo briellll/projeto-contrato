@@ -1,9 +1,21 @@
 export async function jsListar() {
     const API_URL = 'https://pacta-api-production.up.railway.app/contratos';
     const tbody = document.querySelector('table tbody');
+    const token = localStorage.getItem('userToken')
+
+    if (!token) {
+        window.location.href = 'pages/login.html';
+        return;
+    }
 
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch(API_URL, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            }
+        });
 
         const contratos = await response.json();
         tbody.innerHTML= '';

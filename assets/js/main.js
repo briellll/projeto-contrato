@@ -38,6 +38,7 @@ function logoutNavigation(){
     const logout = document.getElementById('logout_btn');
 
     logout.addEventListener('click', e =>{
+        localStorage.clear();
         window.location.href = 'pages/login.html';
     })
 }

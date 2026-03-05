@@ -1,6 +1,7 @@
 export function cadastroContrato() {
     const form = document.querySelector('#form');
     const API_URL = 'https://pacta-api-production.up.railway.app/contratos/create';
+    const token = localStorage.getItem('userToken');
 
     if (form) {
 
@@ -30,6 +31,7 @@ export function cadastroContrato() {
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
+                        'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(dados)

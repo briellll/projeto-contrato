@@ -66,7 +66,7 @@ function renderizarLinha(contrato, container){
 
                             <div class="detail-item">
                                 <span>Endereço:</span>
-                                <strong>carregando dados...</strong>
+                                <strong>---</strong>
                             </div>
 
                             <div class="detail-item">
@@ -76,17 +76,17 @@ function renderizarLinha(contrato, container){
 
                             <div class="detail-item">
                                 <span>Telefone:</span>
-                                <strong>carregando dados...</strong>
+                                <strong>---</strong>
                             </div>
 
                             <div class="detail-item">
                                 <span>Cidade:</span>
-                                <strong>carregando dados...</strong>
+                                <strong>---</strong>
                             </div>
 
                             <div class="detail-item">
                                 <span>Telefone:</span>
-                                <strong>carregando dados...</strong>
+                                <strong>---</strong>
                             </div>
 
                             <div class="detail-item">

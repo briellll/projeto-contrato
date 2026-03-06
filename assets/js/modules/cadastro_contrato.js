@@ -20,8 +20,13 @@ export function cadastroContrato() {
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
 
+            const rawValue = document.getElementById('valorContrato').value;
+
+            const cleanValue = parseFloat(rawValue.replace(/\./g, '').replace(',', '.'));
+
             const formData = new FormData(form);
             const dados = Object.fromEntries(formData.entries());
+            dados.valorContrato = cleanValue;
 
             if (dados.cnpjFornecedor) {
             dados.cnpjFornecedor = dados.cnpjFornecedor.replace(/\D/g, '');

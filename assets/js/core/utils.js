@@ -19,7 +19,7 @@ export function showModal(title,message, type = 'success', callback){
 
     if (type === 'error'){
         modalIcon.classList.add('error');
-        modalIcon.innerHTML = '<i class="fa-solid fa-circle-xmark></i>';
+        modalIcon.innerHTML = '<i class="fa-solid fa-circle-xmark"></i>';
     } else {
         modalIcon.classList.remove('error');
         modalIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>'

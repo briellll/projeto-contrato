@@ -1,0 +1,41 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 2000;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-icon {
+    font-size: 50px;
+    color: #10b981; /* Verde sucesso */
+    margin-bottom: 20px;
+}
+
+.modal-content .btn-default {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.modal-icon.error {
+    color: #ef4444;
+}

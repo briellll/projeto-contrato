@@ -3,10 +3,10 @@ export async function jsListar() {
     const tbody = document.querySelector('table tbody');
     const token = localStorage.getItem('userToken')
 
-    if (!token) {
-        window.location.href = 'pages/login.html';
-        return;
-    }
+    // if (!token) {
+    //     window.location.href = 'pages/login.html';
+    //     return;
+    // }
 
     try {
         const response = await fetch(API_URL, {

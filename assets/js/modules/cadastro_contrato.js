@@ -1,3 +1,5 @@
+import { showModal } from "../core/utils.js";
+
 export function cadastroContrato() {
     const form = document.querySelector('#form');
     const API_URL = 'https://pacta-api-production.up.railway.app/contratos/create';
@@ -43,15 +45,21 @@ export function cadastroContrato() {
                     });
 
                     if (response.ok) {
-                        const resultado = await response.json();
-                        alert('Contrato cadastrado com sucesso');
-                        form.reset();
+                        showModal(
+                            "Sucesso!",
+                            "Contrato cadastrado com sucesso.",
+                            "success",
+                            ()=>{
+                                form.reset()
+                            }
+                        );
+
                     } else {
-                                throw new Error('Erro ao cadastrar contrato.');
+                                showModal('Opa!','Dados invalidos.Verifique os campos','error');
                             }
                 } catch (error) {
                 console.error('Erro na requisição:', error);
-                alert('Deu ruim');
+                showModal('Erro de conexão','Não foi possivel falar com o servidor','error');
             }
         });
     }
